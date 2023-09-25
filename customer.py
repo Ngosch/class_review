@@ -78,15 +78,23 @@ class Customer:
     def full_name(self):
         return f"{self.first_name} {self.family_name}"
 
+    def entry_fee(self):
+        if self.age < 20:
+            return 1000
+        elif 20 <= self.age < 65:
+            return 1500
+        else:
+            return 1200
+
     def info_csv(self):
-        return f"{self.full_name()},{self.age}"
+        return f"{self.full_name()},{self.age},{self.entry_fee()}"
 
 # テスト
 ken = Customer(first_name="Ken", family_name="Tanaka", age=15)
-print(ken.info_csv())  # "Ken Tanaka,15"
+print(ken.info_csv())  # "Ken Tanaka,15,1000"
 
 tom = Customer(first_name="Tom", family_name="Ford", age=57)
-print(tom.info_csv())  # "Tom Ford,57"
+print(tom.info_csv())  # "Tom Ford,57,1500"
 
 ieyasu = Customer(first_name="Ieyasu", family_name="Tokugawa", age=73)
-print(ieyasu.info_csv())  # "Ieyasu Tokugawa,73"
+print(ieyasu.info_csv())  # "Ieyasu Tokugawa,73,1200"
