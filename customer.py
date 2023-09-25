@@ -105,3 +105,40 @@ print(tom.info_csv())  # "Tom Ford,57,1500"
 
 ieyasu = Customer(first_name="Ieyasu", family_name="Tokugawa", age=73)
 print(ieyasu.info_csv())  # "Ieyasu Tokugawa,73,1200"
+
+# 課題C-5のコード（課題C-1 + C-2 + C-3 + C-4 + C-5）
+class Customer:
+    def __init__(self, first_name, family_name, age):
+        self.first_name = first_name
+        self.family_name = family_name
+        self.age = age
+
+    def full_name(self):
+        return f"{self.first_name} {self.family_name}"
+
+    def entry_fee(self):
+        if self.age <= 3:
+            return 0
+        elif self.age < 20:
+            return 1000
+        elif 20 <= self.age < 65:
+            return 1500
+        else:
+            return 1200
+
+    def info_csv(self):
+        return f"{self.full_name()},{self.age},{self.entry_fee()}"
+
+# テスト
+ken = Customer(first_name="Ken", family_name="Tanaka", age=15)
+print(ken.info_csv())  # "Ken Tanaka,15,1000"
+
+tom = Customer(first_name="Tom", family_name="Ford", age=57)
+print(tom.info_csv())  # "Tom Ford,57,1500"
+
+ieyasu = Customer(first_name="Ieyasu", family_name="Tokugawa", age=73)
+print(ieyasu.info_csv())  # "Ieyasu Tokugawa,73,1200"
+
+baby = Customer(first_name="Taro", family_name="Yamada", age=2)
+print(baby.info_csv())  # "Taro Yamada,2,0"
+
