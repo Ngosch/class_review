@@ -1,4 +1,5 @@
 # 課題C-1: フルネームを取得できる
+print("------------------課題C-1----------------------")
 # 定義: Customerクラス
 class Customer:
     # 初期化メソッド
@@ -20,6 +21,7 @@ print(tom.full_name())  # "Tom Ford" という値を返す
 
 
 # 課題C-2のコード（課題C-1 + 課題C-2）
+print("------------------課題C-2----------------------")
 class Customer:
     def __init__(self, first_name, family_name, age):
         self.first_name = first_name
@@ -45,6 +47,7 @@ print(ieyasu.age)  # 73
 
 
 # 課題C-3のコード（課題C-1 + C-2 + C-3）
+print("------------------課題C-3----------------------")
 class Customer:
     def __init__(self, first_name, family_name, age):
         self.first_name = first_name
@@ -75,6 +78,7 @@ print(ieyasu.entry_fee())  # 1200
 
 
 # 課題C-4のコード（課題C-1 + C-2 + C-3 + C-4）
+print("------------------課題C-4----------------------")
 class Customer:
     def __init__(self, first_name, family_name, age):
         self.first_name = first_name
@@ -107,6 +111,7 @@ ieyasu = Customer(first_name="Ieyasu", family_name="Tokugawa", age=73)
 print(ieyasu.info_csv())  # "Ieyasu Tokugawa,73,1200"
 
 # 課題C-5のコード（課題C-1 + C-2 + C-3 + C-4 + C-5）
+print("------------------課題C-5----------------------")
 class Customer:
     def __init__(self, first_name, family_name, age):
         self.first_name = first_name
@@ -143,7 +148,7 @@ baby = Customer(first_name="Taro", family_name="Yamada", age=2)
 print(baby.info_csv())  # "Taro Yamada,2,0"
 
 # 課題C-6のコード（課題C-1 + C-2 + C-3 + C-4 + C-5 + C-6）
-
+print("------------------課題C-6----------------------")
 class Customer:
     def __init__(self, first_name, family_name, age):
         self.first_name = first_name
@@ -185,7 +190,7 @@ elderly = Customer(first_name="Jiro", family_name="Sato", age=80)
 print(elderly.info_csv())  # "Jiro Sato,80,500"
 
 # 課題C-7のコード（課題C-1 + C-2 + C-3 + C-4 + C-5 + C-6 + C-7）
-
+print("------------------課題C-7----------------------")
 class Customer:
     def __init__(self, first_name, family_name, age):
         self.first_name = first_name
@@ -230,7 +235,7 @@ elderly = Customer(first_name="Jiro", family_name="Sato", age=80)
 print(elderly.info_tab())  # "Jiro Sato  80  500"
 
 # 課題C-8のコード（課題C-1 + C-2 + C-3 + C-4 + C-5 + C-6 + C-7 + C-8）
-
+print("------------------課題C-8----------------------")
 class Customer:
     def __init__(self, first_name, family_name, age):
         self.first_name = first_name
